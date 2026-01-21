@@ -1,0 +1,41 @@
+# --- Secrets & Config ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Backend (Python) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.pytest_cache/
+*.log
+
+# --- Database (Local Vector Store) ---
+# We ignore the local DB so everyone on the team doesn't overwrite 
+# each other's local collections.
+yuridik/backend/data/chroma_db/
+
+# --- Frontend (Next.js & Node) ---
+node_modules/
+.next/
+out/
+build/
+dist/
+.vercel
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- IDEs & OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
